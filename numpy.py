@@ -142,3 +142,16 @@ print("eigvectors")
 print(eigvectors)	#特征向量
 #eigvalues[0] 和 [eigvectors[0,0],eigvectors[1,0]]一一配对
 
+#--------------------------------
+import numpy as np
+b = np.array([1.+1.j,2.+3.j])
+print(b)
+print(type(b))
+b1 = b.tolist() #将numpy转出list
+print(b1)
+print(type(b1))
+
+c = b.astype(int) #将元素的复数类型转化为int
+print(c)
+c1 = c.astype(complex)  #将元素的int类型转化为复数
+print(c1)
