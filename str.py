@@ -80,10 +80,16 @@ ljust(width)
 #返回一个左对齐的字符串，并用空格填充至长度为width 
 lower() 
 #转换字符串中所有大写字符为小写 
-lstrip() 
-#去掉字符串中左边的所有空格 
-rstrip() 
-#去掉字符串中右边的所有空格 
+
+
+lstrip('str') 
+#去掉字符串中左边的所有空格,有'str'则去除左边的'str'中的字符
+rstrip('str') 
+#去掉字符串中右边的所有空格,有'str'则去除右边的'str'中的字符 
+strip('str')
+#去掉字符串中右边的所有空格,有'str'则去除两边的'str'中的字符 
+
+
 partition(sub) 
 #以sub为中心，将字符串切割成左，中，右三个元组
 str = 'ARE YOU SURE?'
